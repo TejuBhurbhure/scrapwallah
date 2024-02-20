@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+  <html lang="en">
+    {{> header}}
+
+      <body class="vh-100">
+
+        <section class="container d-flex flex-column justify-content-center align-items-center h-100">
+            <div id="g_id_onload"
+              data-client_id="215759558209-l0kg3386oaplun7r7qhpf6jv2rbum5st.apps.googleusercontent.com"
+              data-context="signup"
+              data-ux_mode="popup"
+              data-callback="handleCredentialResponse"
+              data-auto_prompt="false">
+          </div>
+
+          <div id="sign" class="g_id_signin col-6 col-xm-6 col-md-4 col-sm-5 col-lg-3"
+              data-type="standard"
+              data-shape="rectangular"
+              data-theme="outline"
+              data-text="signin_with"
+              data-size="large"
+              data-logo_alignment="left">
+            </div>
+
+            <div id="info" class="card d-none" style="width: 18rem;">
+                <img id="photo" class="card-img-top" alt="Your Image">
+                <div class="card-body">
+                  <h5 class="card-title" id="fullname"></h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">ID: <span id="id_num"></span></li>
+                  <li class="list-group-item">First Name: <span id="first"></span></li>
+                  <li class="list-group-item">Last Name: <span id="last"></span></li>
+                  <li class="list-group-item">Email: <span id="email"></span></li>
+                </ul>
+              </div>
+
+
+            <button class="d-none btn btn-primary mt-3 col-6 col-xm-6 col-md-4 col-sm-5 col-lg-3 font-weight-bold" id="out">Sign out</button>  
+        </section>
+          {{> footer}}
+      </body>
+  </html>
